@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>spectrum test</title>
+  	<link rel="stylesheet" href ="stylesheet.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="jquery.spectrum.js"></script> 
+	<script src="script.js"></script>
+
+</head>
+<body>
+	 <p id="spectrumPlugin" class="spectrumHeader">
+		STOCKS!!!!
+	</p>
+	<div class="progress">
+		<div class="progress-bar progress-bar-danger" style="width: 20%">
+		    <span class="sr-only-1">i thought we weren't going to panic</span>
+		</div>
+	 	<div class="progress-bar progress-bar-warning" style="width: 20%">
+		    <span class="sr-only-2">don't panic</span>
+		</div>
+		<div class="progress-bar progress-bar-default" style="width: 20%">
+		    <span class="sr-only-3">seriously, don't panic</span>
+		</div>
+		   <div class="progress-bar progress-bar-striped active" style="width: 20%">
+		    <span class="sr-only-4">stop it!</span>
+		</div>
+		   <div class="progress-bar progress-bar-success" style="width: 20%">
+		    <span class="sr-only-5">I TOLD YOU NOT TO PANIC!!</span>
+		</div>
+	</div>
+	<div class = "container">
+		<div class="row">
+			<div class = "col-md-4 well col-md-offset-4">
+				<form>
+	    			Search Stocks
+		  			<input type = "text" id = "stock_search">
+				</form>
+				<button class="submit">submit</button>
+				<br/>
+				<div class="results"></div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<br/>
+
+ 	<div id = "main">
+		 <button id = "panicBTN" type = "button">ok...PANIC!!!!</button>
+		 <h5 class = 'panic'>You panicked <span id = "panic" style="color:red">......</span> milliseconds after January 1, 1970.</h5>
+		 <br/>
+
+	<div id = "oneone">
+		 <button id = "one" type = "button">how many seconds is that?</button>
+		 <h5>That is <span id ="first" style="color:red">......</span> seconds after January 1, 1970.</h5>
+		 <br/>
+	</div>
+
+	<div id = "twotwo">
+		<button id = "two" type = "button">how many minutes is that?</button>
+		<h5>That is <span id ="second" style="color:red">......</span> minutes after January 1, 1970.</h5>
+		<br/>
+	</div>
+
+	<div id = "threethree">
+		<button id = "three" type = "button">how many hours is that?</button>
+		<h5>That is <span id ="third" style="color:red">......</span> hours after January 1, 1970.</h5>
+		<br/>
+	</div>
+
+	<div id = "fourfour">
+		<button id = "four" type = "button">how many days is that?</button>
+		<h5>That is <span id ="forth" style="color:red">......</span> days after January 1, 1970.</h5>
+		<br/>
+	</div>
+</div>
+
+<button id ='reload'>Let's start over, I promise I won't panic</button>
+
+
+</body>
+</html>

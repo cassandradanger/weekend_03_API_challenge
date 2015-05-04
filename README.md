@@ -18,5 +18,15 @@ spectrum-plugin folder: spectrum plugin additional information
 
 bootstrap.min.css: bootstrap minified file
 
+
+
+3-4 ideas for future use:
+stock ticker app
+find your specific stock information
+incorporate a symbol lookup finder as well to make it more well-rounded
+maybe it could store your stock preferences and update their quotes automatically everyday 
+
+
+
 for additional information, please notify me on GitHub with username CassandraDanger
 
