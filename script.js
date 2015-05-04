@@ -39,31 +39,22 @@ Markit.QuoteService.prototype.makeRequest = function() {
 
 	$(document).ready(function(){ 
 		$(".submit").on("click", function(){
-        $(".results").empty();
-        var stockSearch = $("#stock_search").val();
+        	$(".results").empty();
+        	var stockSearch = $("#stock_search").val();
 
-        new Markit.QuoteService(stockSearch, function(jsonResult) {
-
-            //Catch errors
-            if (!jsonResult || jsonResult.Message){
-                console.error("Error: ", jsonResult.Message);
-                return;
+        	new Markit.QuoteService(stockSearch, function(jsonResult) {
+	            //Catch errors
+	            if (!jsonResult || jsonResult.Message){
+	            	$(".results").append("Error: ", jsonResult.Message);
+	                console.error("Error: ", jsonResult.Message);
+	                return;
             }
-
-            //If all goes well, your quote will be here.
             console.log(jsonResult);
-
-            //Now proceed to do something with the data.
-            $(".results").append("<p><b>Name:</b> " + jsonResult.Name + "</p> <p><b>Symbol:</b> " + jsonResult.Symbol + "</p><p><b>Last Price:</b> " + jsonResult.LastPrice + "</p><p><b>Change:</b> " + jsonResult.Change + "</p>");
-
-            /**
-            * Need help? Visit the API documentation at:
-            * http://dev.markitondemand.com
-            */
-        });
+            $(".results").append("<p><b>Name:</b> " + jsonResult.Name + "</p> <p><b>Symbol:</b> " + jsonResult.Symbol + "</p><p><b>Last Price:</b> " + jsonResult.LastPrice + "</p><p><b>Change:</b> " + jsonResult.Change + "</p><br/><p class='small'>this api brought to you by: http://dev.markitondemand.com</p>").hide().fadeIn();
+        	});
 
         $("#stock_search").val('');
-    });
+   		});
 
 		$("#oneone").hide();
 		$("#twotwo").hide();
