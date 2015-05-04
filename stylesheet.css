@@ -1,0 +1,27 @@
+	 .spectrumHeader {
+		transition: background-color 4s ease;
+		width: 100%;
+		border-radius: 5px;
+		margin-top:10px;
+		font: 100px black Helvetica;
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.main{
+		text-align: center;
+	}
+
+	#panicBTN, #one, #two, #three, #four, #five, #reload{
+		color: black;
+	}
+
+	.submit{
+		margin: 20px auto 30px auto;
+		color:black;
+	}
+
+p{
+	font-weight: 500px;
+}
